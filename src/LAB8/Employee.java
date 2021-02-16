@@ -10,13 +10,13 @@ public class Employee extends Person {
     public Employee() {
     }
 
-    public Employee(String pid, String name, int age, String gender, String tel, String empID, String position, double salary) {
-        //calling constructor of super-class
+    public Employee(String pid, String name, String age, String gender, String tel, String empID, String position, double salary) {
         super(pid, name, age, gender, tel);
         this.empID = empID;
         this.position = position;
         this.salary = salary;
     }
+
     //getter and setter
 
     public String getEmpID() {

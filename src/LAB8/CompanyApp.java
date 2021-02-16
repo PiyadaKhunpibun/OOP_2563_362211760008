@@ -29,15 +29,33 @@ public class CompanyApp {
         Scanner sc = new Scanner(System.in);
 
         Employee e = new Employee();
-        System.out.print("Enter Employee emp: ");
+        System.out.print("Enter Employee id: ");
         String id = sc.nextLine();
-        e.setEmpID(id);
+        e.setPid(id);
+
+        System.out.print("Enter Employee name: ");
+        e.setName(sc.nextLine());
+
+        System.out.print("Enter Employee age: ");
+        e.setAge(sc.nextLine());
+
+        System.out.print("Enter Employee gender: ");
+        e.setGender(sc.nextLine());
+
+        System.out.print("Enter Employee tel: ");
+        e.setTel(sc.nextLine());
+
+        System.out.print("Enter Employee emp: ");
+        String id2 = sc.nextLine();
+        e.setEmpID(id2);
 
         System.out.print("Enter Employee Position: ");
         e.setPosition(sc.nextLine());
 
         System.out.print("Enter Employee Salary: ");
         e.setSalary(sc.nextInt());
+
+
         return e;
     }
 

@@ -4,7 +4,7 @@ public class Person {
     //Class Attributes
     private String pid; //เลขบัตรประชาชน
     private String name; //ชื่อ
-    private int age; //อายุ
+    private String age; //อายุ
     private String gender; //เพศ
     private  String tel; //เบอร์โทรศัพท์
 
@@ -13,7 +13,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(String pid, String name, int age, String gender, String tel) {
+    public Person(String pid, String name, String age, String gender, String tel) {
         this.pid = pid;
         this.name = name;
         this.age = age;
@@ -39,11 +39,11 @@ public class Person {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -62,6 +62,7 @@ public class Person {
     public void setTel(String tel) {
         this.tel = tel;
     }
+
 
     //toString
 
